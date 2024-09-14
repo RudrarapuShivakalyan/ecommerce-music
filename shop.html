@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Instruments Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <h1>Musical Instruments</h1>
+        <select id="sort-options">
+            <option value="default">Sort By</option>
+            <option value="name">Name</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+        </select>
+        <a href="cart.html"><button class="view-cart">View Cart</button></a>
+        <a href="index.html"><button class="view-cart">Home</button></a>
+        <a href="checkout.html"><button class="view-cart">Buy Now</button></a>
+    </header>
+
+    <main>
+        <h2>Instruments</h2>
+        <div class="musical-instruments">
+            <!-- Product 1 -->
+            <div class="instrument">
+                <img src="xylophone.jpg" alt="Xylophone">
+                <h3>Xylophone</h3>
+                <p class="price">₹5000</p>
+                <p class="description">The xylophone is a percussion instrument made of wooden bars with resonators underneath. It is played using mallets to strike the bars and produce sound.</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now" data-product='{"id": "1", "name": "xylophone", "price": "₹5000", "description": "he xylophone is a percussion instrument made of wooden bars with resonators underneath. It is played using mallets to strike the bars and produce sound.</p>", "image": "xylophone.jpg"}'>Buy Now</button>
+                
+                <!-- Video Section for Xylophone -->
+                <div class="video-section">
+                    <button class="play-video" data-video-url="https://www.youtube.com/shorts/PIHDjV9Ejvk?feature=share">Play Video</button>
+                </div>
+
+                <!-- Review Form for Xylophone -->
+                <div class="review-form">
+                    <h4>Leave a Review</h4>
+                    <form class="review-form">
+                        <input type="text" placeholder="Your Name" required />
+                        <textarea placeholder="Your Review" required></textarea>
+                        <button type="submit">Submit Review</button>
+                    </form>
+                    <div class="reviews-container"></div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="instrument">
+                <img src="saxophone.jpg" alt="Saxophone">
+                <h3>Saxophone</h3>
+                <p class="price">₹1200</p>
+                <p class="description">A saxophone has a conical metal (originally brass) tube with about 24 openings controlled by padded keys. The mouthpiece is similar to that of a clarinet.</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now" data-product='{"id": "2", "name": "saxophone", "price": "₹1200", "description": "A saxophone has a conical metal (originally brass) tube with about 24 openings controlled by padded keys. The mouthpiece is similar to that of a clarinet.", "image": "saxophone.jpg"}'>Buy Now</button>
+                
+                <!-- Video Section for Saxophone -->
+                <div class="video-section">
+                    <button class="play-video" data-video-url="https://www.youtube.com/embed/saxophone-demo">Play Video</button>
+                </div>
+
+                <!-- Review Form for Saxophone -->
+                <div class="review-form">
+                    <h4>Leave a Review</h4>
+                    <form class="review-form">
+                        <input type="text" placeholder="Your Name" required />
+                        <textarea placeholder="Your Review" required></textarea>
+                        <button type="submit">Submit Review</button>
+                    </form>
+                    <div class="reviews-container"></div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="instrument">
+                <img src="gitar.jpg" alt="Guitar">
+                <h3>Guitar</h3>
+                <p class="price">₹20000</p>
+                <p class="description">The guitar is a plucked string instrument with a fretted fingerboard and a soundbox with a pronounced waist.</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now" data-product='{"id": "3", "name": "guitar", "price": "₹20000", "description": "The guitar is a plucked string instrument with a fretted fingerboard and a soundbox with a pronounced waist.", "image": "gitar.jpg"}'>Buy Now</button>
+                
+                <!-- Video Section for Guitar -->
+                <div class="video-section">
+                    <button class="play-video" data-video-url="https://www.youtube.com/shorts/hgy4dyStLms?feature=share">Play Video</button>
+                </div>
+
+                <!-- Review Form for Guitar -->
+                <div class="review-form">
+                    <h4>Leave a Review</h4>
+                    <form class="review-form">
+                        <input type="text" placeholder="Your Name" required />
+                        <textarea placeholder="Your Review" required></textarea>
+                        <button type="submit">Submit Review</button>
+                    </form>
+                    <div class="reviews-container"></div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="instrument">
+                <img src="drums.jpg" alt="Drums">
+                <h3>Drums</h3>
+                <p class="price">₹20000</p>
+                <p class="description">The drum is a universal and ancient instrument used in many forms of music worldwide.</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now" data-product='{"id": "4", "name": "Drums", "price": "₹20000", "description": "The drum is a universal and ancient instrument used in many forms of music worldwide.", "image": "drums.jpg"}'>Buy Now</button>
+                
+                <!-- Video Section for Drums -->
+                <div class="video-section">
+                    <button class="play-video" data-video-url="https://www.youtube.com/shorts/fzY77TlPujc">Play Video</button>
+                </div>
+
+                <!-- Review Form for Drums -->
+                <div class="review-form">
+                    <h4>Leave a Review</h4>
+                    <form class="review-form">
+                        <input type="text" placeholder="Your Name" required />
+                        <textarea placeholder="Your Review" required></textarea>
+                        <button type="submit">Submit Review</button>
+                    </form>
+                    <div class="reviews-container"></div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="instrument">
+                <img src="violion.jpg" alt="Violin">
+                <h3>Violin</h3>
+                <p class="price">₹30000</p>
+                <p class="description">The violin is a string instrument with four strings tuned in perfect fifths. It is played with a bow.</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now" data-product='{"id": "5", "name": "Violin", "price": "₹30000", "description": "The violin is a string instrument with four strings tuned in perfect fifths. It is played with a bow.", "image": "violion.jpg"}'>Buy Now</button>
+                
+                <!-- Video Section for Violin -->
+                <div class="video-section">
+                    <button class="play-video" data-video-url="https://www.youtube.com/shorts/ajeXOIkMv4w">Play Video</button>
+                </div>
+
+                <!-- Review Form for Violin -->
+                <div class="review-form">
+                    <h4>Leave a Review</h4>
+                    <form class="review-form">
+                        <input type="text" placeholder="Your Name" required />
+                        <textarea placeholder="Your Review" required></textarea>
+                        <button type="submit">Submit Review</button>
+                    </form>
+                    <div class="reviews-container"></div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="instrument">
+                <img src="trumpet.jpg" alt="Trumpet">
+                <h3>Trumpet</h3>
+                <p class="price">₹4000</p>
+                <p class="description">The trumpet is a brass instrument with a flared bell and three valves for altering pitch. It is commonly used in orchestras and jazz bands.</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now" data-product='{"id": "6", "name": "Trumpet", "price": "₹4000", "description": "The trumpet is a brass instrument with a flared bell and three valves for altering pitch. It is commonly used in orchestras and jazz bands.", "image": "trumpet.jpg"}'>Buy Now</button>
+                
+                <!-- Video Section for Trumpet -->
+                <div class="video-section">
+                    <button class="play-video" data-video-url="https://www.youtube.com/shorts/ityur3JPrrY">Play Video</button>
+                </div>
+
+                <!-- Review Form for Trumpet -->
+                <div class="review-form">
+                    <h4>Leave a Review</h4>
+                    <form class="review-form">
+                        <input type="text" placeholder="Your Name" required />
+                        <textarea placeholder="Your Review" required></textarea>
+                        <button type="submit">Submit Review</button>
+                    </form>
+                    <div class="reviews-container"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Buy Now</h1>
+    </header>
+    <main>
+        <!-- Product Details -->
+        <img id="product-image" src="" alt="Product Image">
+        <h1 id="product-name">Product Name</h1>
+        <p id="product-price">₹0.00</p>
+        <p id="product-description">Product Description</p>
+
+        <!-- Payment Method Section -->
+        <section class="payment-methods" id="payment-methods">
+            <h2>Select Your Payment Method</h2>
+            <form id="payment-form">
+                <label>
+                    <input type="radio" name="payment-method" value="COD" checked onclick="togglePaymentDetails('COD')">
+                    Cash on Delivery
+                </label>
+                <p>Pay with cash when your order is delivered.</p>
+
+                <label>
+                    <input type="radio" name="payment-method" value="PhonePe" onclick="togglePaymentDetails('PhonePe')">
+                    PhonePe
+                </label>
+                <p>Use the PhonePe app to scan the QR code and pay instantly.</p>
+
+                <label>
+                    <input type="radio" name="payment-method" value="Card" onclick="togglePaymentDetails('Card')">
+                    Credit/Debit Card
+                </label>
+                <p>Secure payment using your credit or debit card.</p>
+            </form>
+
+            <!-- Card Payment Details -->
+            <div id="card-details" class="payment-details" style="display: none;">
+                <h3>Enter Card Details</h3>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" placeholder="Enter your card number">
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY">
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" placeholder="CVV">
+            </div>
+
+            <!-- PhonePe Payment Details -->
+            <div id="phonepe-details" class="payment-details" style="display: none;">
+                <h3>Scan to Pay</h3>
+                <img src="https://th.bing.com/th/id/OIP.vrHr0_LAMv276TywjdbUzQHaHa?rs=1&pid=ImgDetMain" alt="PhonePe QR Code" width="200">
+                <p>Scan the QR code using your PhonePe app to complete the payment.</p>
+            </div>
+
+            <!-- QR Scanner Section -->
+            <div id="qr-scanner" style="display: none;">
+                <h3>Order Payment Scanner</h3>
+                <p>Use your mobile device to scan the QR code for payment.</p>
+                <div id="qr-code-display">
+                    <img src="https://th.bing.com/th/id/OIP.vrHr0_LAMv276TywjdbUzQHaHa?rs=1&pid=ImgDetMain" alt="Dynamic QR Code" width="200">
+                </div>
+            </div>
+
+            <button class="pay-now-btn" onclick="payNow()">Proceed to Payment</button>
+        </section>
+
+        <!-- Order Details Section -->
+        <section class="order-details" id="order-details" style="display: none;">
+            <h2>Order Confirmation</h2>
+            <p><strong>Order ID:</strong> <span id="order-id">123456</span></p>
+            <p><strong>Order Date:</strong> <span id="order-date">2024-08-31</span></p>
+            <p><strong>Shipping Address:</strong> <span id="shipping-address">123 Main St, City, Country</span></p>
+        </section>
+
+        <!-- Order Tracking Section -->
+        <section class="order-tracking" id="order-tracking" style="display: none;">
+            <h2>Order Tracking</h2>
+            <p><strong>Tracking Number:</strong> <span id="tracking-number">TRACK123456</span></p>
+            <p><strong>Current Status:</strong> <span id="order-status">In Transit</span></p>
+        </section>
+    </main>
+</body>
+</html>

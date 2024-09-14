@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="checkout.css">
+  
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Buy Now</h1>
+    </header>
+    <main>
+        <img id="product-image" src="" alt="Product Image">
+        <h1 id="product-name">Product Name</h1>
+        <p id="product-price">₹0.00</p>
+        <p id="product-description">Product Description</p>
+
+        <form id="payment-form">
+            <label for="payment-option">Select Payment Method:</label>
+            <select id="payment-option">
+                <option value="">Select...</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="phonepe">PhonePe</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+
+            <div id="card-details" class="payment-details">
+                <label for="card-element">Card details</label>
+                <div id="card-element"></div>
+                <div id="error-message"></div>
+            </div>
+
+            <div id="phonepe-details" class="payment-details">
+                <p>PhonePe payment details go here.</p>
+            </div>
+
+            <div id="cod-details" class="payment-details">
+                <p>Cash on Delivery details go here.</p>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </main>
+</body>
+</html>
